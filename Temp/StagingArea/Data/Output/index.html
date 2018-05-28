@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | Simple Web Sockets</title>
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/ext.json")
+    </script>
+    <style type="text/css">
+      html, body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+        background: black;
+      }
+      #gameContainer {
+        height: 100% !important;
+        width: 100% !important;
+        position: fixed;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="gameContainer" style="width: 960px; height: 600px; margin: auto"></div>
+  </body>
+</html>
